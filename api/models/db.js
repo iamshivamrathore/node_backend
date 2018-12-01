@@ -1,9 +1,9 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
 var dbURI = 'mongodb://sharang:sharang1@ds211558.mlab.com:11558/todoapp';
-if (process.env.NODE_ENV === 'production') {
-  dbURI = process.env.MONGOLAB_URI;
-}
+//if (process.env.NODE_ENV === 'production') {
+//  dbURI = process.env.MONGOLAB_URI;
+//}
 
 mongoose.connect(dbURI,function(req,res){
  console.log("db connected"); 
