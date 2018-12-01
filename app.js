@@ -83,7 +83,7 @@ app.use('/api', routesApi);
 //     });
 // });
 
-app.listen(3000,function(req,res){
+app.listen(process.env.PORT,function(req,res){
     console.log("lis 3000");
 })
 // module.exports = app;
